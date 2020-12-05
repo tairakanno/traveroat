@@ -15,11 +15,27 @@
 
  @import "bootstrap";
 
+//  #myCarousel{
+//    height: 65vh;
+//  }
+.carousel-item{
+  height: 75vh;
+}
  .carousel-inner{
-  height: 65vh;
+  height: 75vh;
  }
 
  .carousel-item > img{
   width: 100vw;
   // text-align: center;
  }
+
+#back-color{
+  background-color: gainsboro;
+  padding: 10vh 20vw;
+  height: 100vh;
+}
+#user-form{
+  text-align: center;
+  height: 100%;
+}
