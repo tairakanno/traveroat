@@ -3,9 +3,10 @@ class PostsController < ApplicationController
     @post = Post.new
   end
   def create
-    post = Post.new(post_params)
-    if post.valid?
-      post.save
+    @post = Post.new(post_params)
+    binding.pry
+    if @post.valid?
+      @post.save
       redirect_to posts_path
     else
       render action: :new
