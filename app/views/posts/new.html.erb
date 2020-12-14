@@ -1,5 +1,5 @@
 <%= bootstrap_form_with model: @post, local: true do |f| %>
-        <%# <%= render '/shared/error_messages', model: f.object %> %>
+        <%= render '/shared/error_messages', model: f.object %>
         <%= f.text_field :title, placeholder: "title", rows: "10" %>
         <%= f.text_area :text, placeholder: "text", rows: "6" %>
         <%# <%= f.file_field :image, id:"item-image" %> %>
