@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   end
   def create
     @post = Post.new(post_params)
-    binding.pry
     if @post.valid?
       @post.save
       redirect_to posts_path
@@ -13,7 +12,7 @@ class PostsController < ApplicationController
     end
   end
   def index
-    
+    @posts = Post.all
   end
   private
   def post_params

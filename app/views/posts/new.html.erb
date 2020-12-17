@@ -2,7 +2,7 @@
         <%= render '/shared/error_messages', model: f.object %>
         <%= f.text_field :title, placeholder: "title", rows: "10" %>
         <%= f.text_area :text, placeholder: "text", rows: "6" %>
-        <%# <%= f.file_field :image, id:"item-image" %> %>
+        <%= f.file_field :image, id:"item-image" %>
         <%= f.submit "投稿する" ,class:"btn btn-primary btn-lg" %>
       <button type="button" class="btn btn-warning"><%= link_to 'もどる', root_path, class:"btn" %></button>
       <% end %>
