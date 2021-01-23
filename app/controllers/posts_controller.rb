@@ -17,7 +17,9 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
-  
+  def delete
+    
+  end
   private
   def post_params
     params.require(:post).permit(:title,:text).merge(user_id: current_user.id)
