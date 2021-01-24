@@ -3,4 +3,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @posts = @user.posts.order("created_at DESC")
   end
+  def index
+    
+  end
 end
