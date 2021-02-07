@@ -4,6 +4,6 @@ class UsersController < ApplicationController
     @posts = @user.posts.order("created_at DESC")
   end
   def index
-    
+    @users = User.all
   end
 end
