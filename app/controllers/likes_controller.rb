@@ -3,7 +3,7 @@ class LikesController < ApplicationController
     
   end
   def new
-    
+    @like = LIKE.new
   end
   def destroy
     
