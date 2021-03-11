@@ -3,9 +3,9 @@ class LikesController < ApplicationController
     
   end
   def new
-    @like = LIKE.new
+    @like = Like.new
   end
   def destroy
-    
+    like = Like.find(params[:id])
   end
 end
