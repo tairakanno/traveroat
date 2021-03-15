@@ -7,6 +7,9 @@ class LikesController < ApplicationController
   end
   def destroy
     like = Like.find(params[:id])
+    if 
+      
+    end
     like.delete
   end
 end
