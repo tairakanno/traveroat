@@ -12,4 +12,6 @@ class LikesController < ApplicationController
     end
     like.delete
   end
+  def
+  end
 end
