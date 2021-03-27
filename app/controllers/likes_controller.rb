@@ -8,11 +8,8 @@ class LikesController < ApplicationController
   def destroy
     like = Like.find(params[:id])
     if like.valid?
-      like.save
-      
     else
       like.delete 
     end
-    
   end
 end
