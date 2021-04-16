@@ -15,4 +15,7 @@ class LikesController < ApplicationController
   def 
     
   end
+  def 
+    
+  end
 end
